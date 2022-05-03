@@ -11,7 +11,7 @@ import SwiftUI
 struct ZeroGameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
         }
     }
 }
