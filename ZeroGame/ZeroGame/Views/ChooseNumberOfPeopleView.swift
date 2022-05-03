@@ -1,5 +1,5 @@
 //
-//  ChooseNumberOfPeople.swift
+//  ChooseNumberOfPeopleView.swift
 //  ZeroGame
 //
 //  Created by Youngseo Yoon on 2022/05/02.
@@ -7,13 +7,25 @@
 
 import SwiftUI
 
-struct ChooseNumberOfPeople: View {
-    var numberOfPeople = 4
+struct ChooseNumberOfPeopleView: View {
+    @State var numberOfPeople = 4
+    @Binding var test: Bool
+    
     var body: some View {
         ZStack(){
             Color.mainDarkGreen
             VStack(){
                 HStack(){
+                    Button(action: {
+                        self.test.toggle()
+                    }){
+//                        NavigationLink(destination: PlayView()) {
+                            Image(systemName: "house.circle.fill")
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .foregroundColor(.white)
+//                        }
+                    }
                     Button(action: {}){
                         Image("soundOn")
                             .resizable()
@@ -47,9 +59,22 @@ struct ChooseNumberOfPeople: View {
                         .padding(.bottom, 10)
                     Text("\(numberOfPeople)명").font(Font.custom("Jalnan", size: 70))
                     HStack{
-                        Image("plus")
+                        Button(action: {
+                            if numberOfPeople < 12 {
+                                self.numberOfPeople += 1
+                            }
+                        }){
+                            Image("plus")
+                        }
                         Spacer()
-                        Image("minus")
+                        Button(action: {
+                            if numberOfPeople > 0 {
+                                self.numberOfPeople -= 1
+                            }
+
+                        }){
+                            Image("minus")
+                        }
                     }
                     .padding([.leading, .trailing], 20)
 
@@ -78,9 +103,9 @@ struct ChooseNumberOfPeople: View {
         }
     }
     
-    struct ChooseNumberOfPeople_Previews: PreviewProvider {
+    struct ChooseNumberOfPeopleView_Previews: PreviewProvider {
         static var previews: some View {
-            ChooseNumberOfPeople().preferredColorScheme(.dark)
+            ChooseNumberOfPeopleView(test: .constant(true)).preferredColorScheme(.dark)
         }
     }
     

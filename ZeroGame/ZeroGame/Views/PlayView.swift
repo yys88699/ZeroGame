@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PlayView: View {
+    @State var test = false
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -40,8 +42,10 @@ struct PlayView: View {
                             .frame(width: 209, height: 225)
                     }
                     
-                    Button(action: {}) {
-                        NavigationLink(destination: ChooseNumberOfPeople()) {
+                    Button(action: {
+                        self.test.toggle()
+                    }) {
+                        NavigationLink(destination: ChooseNumberOfPeopleView(test: self.$test), isActive: self.$test) {
                             Text("랜덤게임 START")
                                 .font(Font.custom("Jalnan", size: 20))
                                 .foregroundColor(.white)
@@ -54,12 +58,12 @@ struct PlayView: View {
                     .padding(.top, 60)
                 }
             }
+            .onAppear(perform: {
+                MusicPlayer().startBackgroundMusic()
+            })
             .navigationBarHidden(true)
+
         }
-        
-//        .navigationTitle("")
-//            .navigationBarBackButtonHidden(true)
-        
     }
 }
 
