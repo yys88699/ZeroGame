@@ -37,6 +37,9 @@
 		5DD82C552820299D009BCE95 /* LoserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C542820299D009BCE95 /* LoserView.swift */; };
 		5DD82C562820299D009BCE95 /* LoserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C542820299D009BCE95 /* LoserView.swift */; };
 		5DD82C572820299D009BCE95 /* LoserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C542820299D009BCE95 /* LoserView.swift */; };
+		5DD82C592820F8CA009BCE95 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */; };
+		5DD82C5A2820F8CA009BCE95 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */; };
+		5DD82C5B2820F8CA009BCE95 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,7 @@
 		5DD82C4C281FBDBD009BCE95 /* RandomGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGame.swift; sourceTree = "<group>"; };
 		5DD82C5028201AD5009BCE95 /* ChooseNumberOfPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseNumberOfPeople.swift; sourceTree = "<group>"; };
 		5DD82C542820299D009BCE95 /* LoserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoserView.swift; sourceTree = "<group>"; };
+		5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				5DD82C5028201AD5009BCE95 /* ChooseNumberOfPeople.swift */,
 				5DD82C4C281FBDBD009BCE95 /* RandomGame.swift */,
 				5DD82C542820299D009BCE95 /* LoserView.swift */,
+				5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */,
 				5D68958F281E7DC200BE7721 /* Assets.xcassets */,
 				5D689591281E7DC200BE7721 /* Preview Content */,
 				5DD82C36281F7C1B009BCE95 /* Colors.xcassets */,
@@ -316,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD82C39281F7D78009BCE95 /* ColorManager.swift in Sources */,
+				5DD82C592820F8CA009BCE95 /* MusicPlayer.swift in Sources */,
 				5DD82C4D281FBDBD009BCE95 /* RandomGame.swift in Sources */,
 				5DD82C552820299D009BCE95 /* LoserView.swift in Sources */,
 				5D6895B6281E7F0000BE7721 /* TabBarView.swift in Sources */,
@@ -331,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD82C42281F83D2009BCE95 /* PlayView.swift in Sources */,
+				5DD82C5A2820F8CA009BCE95 /* MusicPlayer.swift in Sources */,
 				5DD82C4E281FBDBD009BCE95 /* RandomGame.swift in Sources */,
 				5DD82C5228201AD5009BCE95 /* ChooseNumberOfPeople.swift in Sources */,
 				5D68959D281E7DC300BE7721 /* ZeroGameTests.swift in Sources */,
@@ -344,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD82C47281F9EDF009BCE95 /* TutorialView.swift in Sources */,
+				5DD82C5B2820F8CA009BCE95 /* MusicPlayer.swift in Sources */,
 				5DD82C572820299D009BCE95 /* LoserView.swift in Sources */,
 				5DD82C5328201AD5009BCE95 /* ChooseNumberOfPeople.swift in Sources */,
 				5DD82C43281F83D2009BCE95 /* PlayView.swift in Sources */,

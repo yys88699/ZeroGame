@@ -59,7 +59,7 @@ struct RandomGame: View {
                     .font(Font.custom("Jalnan", size: 80))
                     .foregroundColor(.white)
                 Button(action: {}) {
-                    NavigationLink(destination: ChooseNumberOfPeople()) {
+                    NavigationLink(destination: LoserView()) {
                         Text("게임 종료")
                             .font(Font.custom("Jalnan", size: 20))
                             .foregroundColor(.white)
