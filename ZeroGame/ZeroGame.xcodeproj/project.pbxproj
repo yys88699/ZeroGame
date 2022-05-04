@@ -43,6 +43,8 @@
 		5DD82C5D28210088009BCE95 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C5C28210088009BCE95 /* GameModel.swift */; };
 		5DD82C5E28210088009BCE95 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C5C28210088009BCE95 /* GameModel.swift */; };
 		5DD82C5F28210088009BCE95 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD82C5C28210088009BCE95 /* GameModel.swift */; };
+		5DD82C622821226F009BCE95 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6895B5281E7F0000BE7721 /* TabBarView.swift */; };
+		5DD82C632821226F009BCE95 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6895B5281E7F0000BE7721 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,11 +137,12 @@
 		5D68958A281E7DC000BE7721 /* ZeroGame */ = {
 			isa = PBXGroup;
 			children = (
+				5DD82C6128212261009BCE95 /* Model */,
 				5DD82C6028212065009BCE95 /* Views */,
 				5DD82C3F281F810E009BCE95 /* Info.plist */,
 				5DD82C3A281F7F52009BCE95 /* fonts */,
+				5D6895B5281E7F0000BE7721 /* TabBarView.swift */,
 				5D68958B281E7DC000BE7721 /* ZeroGameApp.swift */,
-				5DD82C5C28210088009BCE95 /* GameModel.swift */,
 				5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */,
 				5D68958F281E7DC200BE7721 /* Assets.xcassets */,
 				5D689591281E7DC200BE7721 /* Preview Content */,
@@ -186,14 +189,21 @@
 		5DD82C6028212065009BCE95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5D6895B5281E7F0000BE7721 /* TabBarView.swift */,
-				5DD82C44281F9EDF009BCE95 /* TutorialView.swift */,
-				5DD82C5028201AD5009BCE95 /* ChooseNumberOfPeopleView.swift */,
 				5DD82C40281F83D2009BCE95 /* PlayView.swift */,
+				5DD82C5028201AD5009BCE95 /* ChooseNumberOfPeopleView.swift */,
 				5DD82C4C281FBDBD009BCE95 /* RandomGame.swift */,
 				5DD82C542820299D009BCE95 /* LoserView.swift */,
+				5DD82C44281F9EDF009BCE95 /* TutorialView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5DD82C6128212261009BCE95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DD82C5C28210088009BCE95 /* GameModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD82C42281F83D2009BCE95 /* PlayView.swift in Sources */,
+				5DD82C622821226F009BCE95 /* TabBarView.swift in Sources */,
 				5DD82C5A2820F8CA009BCE95 /* MusicPlayer.swift in Sources */,
 				5DD82C4E281FBDBD009BCE95 /* RandomGame.swift in Sources */,
 				5DD82C5228201AD5009BCE95 /* ChooseNumberOfPeopleView.swift in Sources */,
@@ -373,6 +384,7 @@
 				5DD82C43281F83D2009BCE95 /* PlayView.swift in Sources */,
 				5DD82C4F281FBDBD009BCE95 /* RandomGame.swift in Sources */,
 				5D6895A9281E7DC300BE7721 /* ZeroGameUITestsLaunchTests.swift in Sources */,
+				5DD82C632821226F009BCE95 /* TabBarView.swift in Sources */,
 				5D6895A7281E7DC300BE7721 /* ZeroGameUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
