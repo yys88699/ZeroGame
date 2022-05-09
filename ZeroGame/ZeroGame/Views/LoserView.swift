@@ -9,11 +9,21 @@ import SwiftUI
 
 struct LoserView: View {
     @State var buzzerTapped = false
+    @Binding var test: Bool
+
     var body: some View {
         ZStack(){
             Color.mainDarkGreen
             VStack(){
                 HStack(){
+                    Button(action: {
+                        self.test.toggle()
+                    }){
+                        Image(systemName: "house.circle.fill")
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                            .foregroundColor(.white)
+                    }
                     Button(action: {}){
                         Image("soundOn")
                             .resizable()
@@ -26,10 +36,12 @@ struct LoserView: View {
                     .resizable()
                     .frame(width: 80, height: 80)
                 
-                Button(action: {buzzerTapped.toggle()
-                    if buzzerTapped == true {
+                Button(action: {
+//                    buzzerTapped.toggle()
+                    SoundManager.instance.playSound(sound: .loser)
+//                    if buzzerTapped == true {
 //                        Image("buzzerUnpressed") = !Image("buzzerPressed")
-                    }
+//                    }
                 }) {
                     Image("buzzerUnpressed")
                         .resizable()
@@ -47,7 +59,7 @@ struct LoserView: View {
                 .padding(.bottom, 20)
 
                 Button(action: {}) {
-                    NavigationLink(destination: RandomGame()) {
+                    NavigationLink(destination: RandomGame(test: $test)) {
                         Text("다음 게임 하러가기")
                             .font(Font.custom("Jalnan", size: 20))
                             .foregroundColor(.white)
@@ -65,6 +77,6 @@ struct LoserView: View {
 
 struct LoserView_Previews: PreviewProvider {
     static var previews: some View {
-        LoserView().preferredColorScheme(.dark)
+        LoserView(test: .constant(true)).preferredColorScheme(.dark)
     }
 }

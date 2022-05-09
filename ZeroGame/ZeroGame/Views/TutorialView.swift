@@ -36,6 +36,7 @@ struct TutorialView: View {
                         }
                     }
                 }
+                .padding(.top, 15)
             }
             .navigationBarHidden(true)
         }
@@ -61,12 +62,21 @@ struct TutorialDetailView: View {
         ZStack{
             Color.mainDarkGreen
             VStack{
-                HStack{
-                    Image(systemName: "arrow.backward.circle.fill")
-                        .foregroundColor(.mainOrange)
-                        .frame(width: 45, height: 45)
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Image(systemName: "arrow.backward.circle.fill")
+                            .foregroundColor(.mainOrange)
+                            .background(Circle()
+                                .frame(width: 20, height: 20).foregroundColor(.white))
+                    }
                     Spacer()
-                }.padding(20)
+                }
+                .font(.largeTitle)
+                .padding(.leading, 15)
+                .padding(.top, 20)
+                Spacer()
                 VStack{
                     Image("\(gameImage)")
                         .resizable()
@@ -98,6 +108,7 @@ struct TutorialDetailView: View {
                     RoundedRectangle(cornerRadius: 22)
                 )
                 .padding(.horizontal, 25)
+                Spacer()
             }
         }
 //        .navigationBarTitleDisplayMode(.inline)
@@ -114,11 +125,11 @@ struct TutorialDetailView: View {
     }
 }
 
-struct Line: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        path.move(to: CGPoint(x: 0, y: 0))
-        path.addLine(to: CGPoint(x: rect.width, y: 0))
-        return path
-    }
-}
+//struct Line: Shape {
+//    func path(in rect: CGRect) -> Path {
+//        var path = Path()
+//        path.move(to: CGPoint(x: 0, y: 0))
+//        path.addLine(to: CGPoint(x: rect.width, y: 0))
+//        return path
+//    }
+//}
