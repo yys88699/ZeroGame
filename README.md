@@ -1,2 +1,2 @@
-# NC1_ZeroGame
+# ZeroGame
  
