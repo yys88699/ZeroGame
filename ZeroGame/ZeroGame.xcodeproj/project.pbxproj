@@ -145,18 +145,17 @@
 		5D68958A281E7DC000BE7721 /* ZeroGame */ = {
 			isa = PBXGroup;
 			children = (
-				5DD82C6128212261009BCE95 /* Model */,
-				5DD82C6028212065009BCE95 /* Views */,
-				5DD82C3F281F810E009BCE95 /* Info.plist */,
-				5DD82C3A281F7F52009BCE95 /* fonts */,
 				5D6895B5281E7F0000BE7721 /* TabBarView.swift */,
 				5D68958B281E7DC000BE7721 /* ZeroGameApp.swift */,
-				5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */,
+				5DD82C38281F7D78009BCE95 /* ColorManager.swift */,
+				5DD82C6128212261009BCE95 /* Model */,
+				5DD82C6028212065009BCE95 /* Views */,
+				5DD82C3A281F7F52009BCE95 /* fonts */,
 				5D7E68DF28240CCD004481F0 /* Sounds */,
-				5D68958F281E7DC200BE7721 /* Assets.xcassets */,
 				5D689591281E7DC200BE7721 /* Preview Content */,
 				5DD82C36281F7C1B009BCE95 /* Colors.xcassets */,
-				5DD82C38281F7D78009BCE95 /* ColorManager.swift */,
+				5D689592281E7DC200BE7721 /* Preview Assets.xcassets */,
+				5DD82C3F281F810E009BCE95 /* Info.plist */,
 			);
 			path = ZeroGame;
 			sourceTree = "<group>";
@@ -164,7 +163,7 @@
 		5D689591281E7DC200BE7721 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5D689592281E7DC200BE7721 /* Preview Assets.xcassets */,
+				5D68958F281E7DC200BE7721 /* Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -189,6 +188,7 @@
 		5D7E68DF28240CCD004481F0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				5DD82C582820F8CA009BCE95 /* MusicPlayer.swift */,
 				5D7E68F02824139A004481F0 /* loser.mp3 */,
 				5D7E68E428240EAD004481F0 /* backgroundMusic.mp3 */,
 			);
